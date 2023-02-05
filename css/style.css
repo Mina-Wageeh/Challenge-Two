@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+    font-family: 'Red Hat Display', sans-serif;
+}
+body
+{
+    background-image: url(../imgs/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main-container
+{
+    height: 100vh ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 50px -20px black;
+}
+.pic img
+{
+    width: 100%;
+}
+p
+{
+    width: 80%;
+    font-size: 16px;
+     color: hsl(224, 23%, 55%);
+}
+.words
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.words h2
+{
+    margin-bottom: 15px;
+}
+.words p
+{
+    text-align: center;
+}
+.music
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.a-btn1
+{
+    font-weight: 900;
+    color:  hsl(245, 75%, 52%);
+}
+.a-btn1:hover
+{
+    font-weight: 900;
+    text-decoration: none;
+    color:  hsla(245, 75%, 52%, 0.699);
+    cursor: pointer;
+}
+.music p
+{
+    font-size: 15px;
+}
+.btns
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.btns button
+{
+    margin-bottom: 15px;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 80%;
+    border: none;
+    transition: all 0.3s;
+}
+.btns button:hover
+{
+    margin-bottom: 15px;
+    background-color:  hsla(245, 75%, 52%, 0.699);
+    color: white;
+    cursor: pointer;
+}
+.a-btn2
+{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 600;
+}
+.a-btn2:hover
+{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+@media (max-width:375px)
+{
+    *
+    {
+        box-sizing: border-box;
+    }
+    .parent
+    {
+        width: 300px;
+        height: 500px;
+    }
+    .music
+    {
+        width: 100%;
+    }
+
+}
